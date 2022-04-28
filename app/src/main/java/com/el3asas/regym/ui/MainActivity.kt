@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import com.el3asas.regym.BuildConfig
 import com.el3asas.regym.R
 import com.el3asas.regym.databinding.ActivityMain2Binding
 import com.el3asas.regym.utils.Pref
@@ -25,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("StaticFieldLeak")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        appLaunched(BuildConfig.APPLICATION_ID)
+
         if (pref.isNotFirstTime()) {
             if (pref.isDarkModeStatus()) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
