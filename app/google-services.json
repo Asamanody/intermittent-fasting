@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "425009558036",
+    "firebase_url": "https://regym-9ae5b.firebaseio.com",
+    "project_id": "regym-9ae5b",
+    "storage_bucket": "regym-9ae5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425009558036:android:14e7743013a9b136acad01",
+        "android_client_info": {
+          "package_name": "com.el3asas.regym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425009558036-9a492nvp39mn7kgss66cn39rso5kb90v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUupX8wiJum7S8vrDLwoRIEd3Vr4lubDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425009558036-9a492nvp39mn7kgss66cn39rso5kb90v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-7153023443357646~9343837825"
+    }
+  ],
+  "configuration_version": "1"
+}

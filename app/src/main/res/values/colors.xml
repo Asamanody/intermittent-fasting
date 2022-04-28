@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/holo_blue_dark</color>
+    <color name="colorPrimaryDark">#199E59</color>
+    <color name="colorAccent">#D017B543</color>
+    <color name="black">#000</color>
+    <color name="cardBg">#fff</color>
+    <color name="allBg">#FFFFFF</color>
+    <color name="blue">@android:color/holo_blue_dark</color>
+    <color name="red">@android:color/holo_red_dark</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="hh">#9A5EE853</color>
+    <color name="b">#8898F491</color>
+    <color name="cardBack">#0A2962FF</color>
+
+    <color name="cycleIcon">#F8EFD8D8</color>
+
+    <color name="txtV">#787878</color>
+    <color name="whightText">#fff</color>
+    <color name="txtVB">#E6E6E6</color>
+
+    <color name="inActv">#A3787878</color>
+    <color name="actv">#FC171717</color>
+
+    <color name="nonSelected">@android:color/transparent</color>
+    <color name="nonSelectedText">#995673C3</color>
+
+    <color name="selected">#3C7BB1</color>
+    <color name="selectedText">#F0F2FD</color>
+
+    <color name="round">#5F91DA</color>
+
+    <color name="textOnImg">#E6E6E6</color>
+
+    <color name="editBg">#A417D582</color>
+
+    <color name="frame">#23955A</color>
+    <color name="frame1">#066C37</color>
+
+    <color name="pen">#01602F</color>
+    <color name="pen1">#03A652</color>
+    <color name="uBI">#FB8888</color>
+    <color name="uUI">#F65959</color>
+    <color name="bgAlarm">#D0000000</color>
+    <color name="smallCirclBg">#ABB8FA</color>
+
+    <color name="buttonBlueBg">#5F91DA</color>
+    <color name="buttonRedBg">#F65959</color>
+
+    <color name="bakBg">#A0B3F8</color>
+    <color name="bakFrm">#758FDC</color>
+    <color name="navBg">#fff</color>
+
+
+    <color name="gradiant1">#347CF6</color>
+    <color name="gradiant2">#E47171</color>
+    <color name="back_col">#B0000000</color>
+
+
+    <color name="plan_g3">#D277D19B</color>
+    <color name="plan_g2">#83AAC8</color>
+    <color name="plan_g1">#86D38C8C</color>
+
+    <color name="info_g1">#FDD8D8</color>
+    <color name="info_g2">#D8DEFD</color>
+    <color name="white">#fff</color>
+
+    <color name="plan_card_text">#fff</color>
+    <color name="secondaryProgressBG">#F1F0F0</color>
+
+    <color name="btmNavBg">#7C95D3</color>
+    <color name="info_card_inter_color">#F1F7FF</color>
+    <color name="customplan_inter_color">#63D8EFE0</color>
+    <color name="dividerColor">#666666</color>
+    <color name="bottomNav">#7C95D3</color>
+    <color name="statusBarColor">#9B9BBD</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+
+</resources>

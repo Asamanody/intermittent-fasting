@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable-ar/r_radio_left.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable-ar/r_radio_right.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable-ar/radio_left.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable-ar/radio_right.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable-v21/back_circle.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable-v21/bb.xml" value="0.14" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable-v21/button_background.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable-v21/circlee.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/age.xml" value="0.16023166023166024" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/all_bg.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/back.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/back_btn.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/back_circle.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/back_left.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/bb.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/bootm_dialog_bg.xml" value="0.15859375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/button_background.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/card_grad_bg.xml" value="0.1361111111111111" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/card_gradiant_bg.xml" value="0.1" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/circle.xml" value="0.16718146718146717" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/circleb.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/circlee.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/custom_plan_bg.xml" value="0.14" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/dark_clock.xml" value="0.1085" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_arrow_back_black_24dp.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_back.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.1085" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_baseline_keyboard_arrow_left_24.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_check.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_check_circle_outline_24.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_error.xml" value="0.14166666666666666" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_light.xml" value="0.14166666666666666" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_moon__1_.xml" value="0.14166666666666666" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_next.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_night.xml" value="0.14166666666666666" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/ic_sun.xml" value="0.14166666666666666" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/info_card_bg.xml" value="0.14583333333333334" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/info_gradiant.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/next_btn.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/plan_gradant.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/r_radio_center.xml" value="0.1025" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/r_radio_left.xml" value="0.1025" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/r_radio_right.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/radio_center.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/radio_flat_regular.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/radio_flat_selected.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/radio_flat_selector_center.xml" value="0.1025" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/radio_flat_selector_right.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/radio_left.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/radio_right.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/selected_plan_bg.xml" value="0.1085" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/smll_wihte_circle.xml" value="0.1" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/so3rat_back.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/splash_img.xml" value="0.169140625" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/squre.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/drawable/stop_btn.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/activity_alarm.xml" value="0.12638888888888888" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/activity_main2.xml" value="0.14166666666666666" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/activity_plan.xml" value="0.18" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/activity_show_item.xml" value="0.18" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/activity_start.xml" value="0.1" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/activity_wakeup.xml" value="0.17" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/bottom_dialog.xml" value="0.14722222222222223" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/calories_for_cat.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/custom_noti.xml" value="0.13866120218579234" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/data_card_item.xml" value="0.1" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/dialog_cutom_plan_time.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/dialog_edit_text.xml" value="0.139453125" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/dialog_effort.xml" value="0.2" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/dialog_gender.xml" value="0.11458333333333333" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/food_item.xml" value="0.13866120218579234" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_age_dialog.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_calories.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_effort_dialog.xml" value="0.16" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_finish_setup_plan.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_gender_dialog.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_height_dialog.xml" value="0.139453125" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_number_dialog.xml" value="0.1" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_plan.xml" value="0.14826254826254825" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_plan_lenght.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_plan_time_sheet.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_plans.xml" value="0.11875" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_save_new_data_dilog.xml" value="0.11458333333333333" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_slideshow.xml" value="0.13866120218579234" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_specifed_days_sheet.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_start_plan_time_sheet.xml" value="0.17" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/fragment_weight_dialog.xml" value="0.139453125" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/huor_dialog.xml" value="0.13866120218579234" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/item_card.xml" value="0.13866120218579234" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/long_plan_sheet_fragment.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/native_layout.xml" value="0.13866120218579234" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/one_item_slider.xml" value="0.13866120218579234" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/one_item_so3rat.xml" value="0.13866120218579234" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/plan_card.xml" value="0.18" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/plan_lenght_fragment.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/plan_view.xml" value="0.13866120218579234" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/plans_frag.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/primary_recycle_item.xml" value="0.13866120218579234" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/profile_fragment.xml" value="0.25" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/reserved_long_plan_details_fragment.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/sso3rat_info_dialog.xml" value="0.22" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/test.xml" value="0.33" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/test_fragment.xml" value="0.15" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/time_picker.xml" value="0.1" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/layout/week_item.xml" value="0.1" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/app/src/main/res/menu/bottom_nav_menu.xml" value="0.15703125" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/nativetemplates/src/main/res/drawable/gnt_outline_shape.xml" value="0.162109375" />
+        <entry key="..\:/MyAndroidProjectss/New folder/regymEdit/nativetemplates/src/main/res/layout/gnt_medium_template_view.xml" value="0.18" />
+        <entry key="..\:/MyAndroidProjectss/regymEdit/app/src/main/res/drawable/splash_img.xml" value="0.1" />
+        <entry key="..\:/MyAndroidProjectss/regymEdit/app/src/main/res/layout/activity_main2.xml" value="0.1523224043715847" />
+        <entry key="..\:/MyAndroidProjectss/regymEdit/app/src/main/res/layout/bottom_dialog.xml" value="0.146484375" />
+        <entry key="..\:/MyAndroidProjectss/regymEdit/app/src/main/res/layout/profile_fragment.xml" value="0.12397540983606557" />
+      </map>
+    </option>
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="org.jetbrains.annotations.Nullable" />
+    <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="15">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="3" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="android.annotation.Nullable" />
+          <item index="7" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="10" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+          <item index="11" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="12" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.annotations.Nullable" />
+          <item index="14" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.Nullable" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="15">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="5" class="java.lang.String" itemvalue="android.annotation.NonNull" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="10" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="11" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+          <item index="12" class="java.lang.String" itemvalue="io.reactivex.annotations.NonNull" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.NonNull" />
+          <item index="14" class="java.lang.String" itemvalue="lombok.NonNull" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="app" />
+      </set>
+    </option>
+  </component>
+</project>

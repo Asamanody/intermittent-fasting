@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_profile">
+
+    <action
+        android:id="@+id/actionPlanFragment"
+        app:destination="@id/planFragment" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.el3asas.regym.ui.profile.ProfileFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/profile_fragment">
+        <action
+            android:id="@+id/action_navigation_profile_to_heightDialog"
+            app:destination="@id/heightDialog" />
+        <action
+            android:id="@+id/action_navigation_profile_to_genderDialog"
+            app:destination="@id/genderDialog" />
+        <action
+            android:id="@+id/action_navigation_profile_to_effortDialog"
+            app:destination="@id/effortDialog" />
+        <action
+            android:id="@+id/action_navigation_profile_to_weightDialog"
+            app:destination="@id/weightDialog" />
+        <action
+            android:id="@+id/action_navigation_profile_to_ageDialog"
+            app:destination="@id/ageDialog" />
+        <argument
+            android:name="age"
+            android:defaultValue="25"
+            app:argType="integer" />
+        <argument
+            android:name="height"
+            android:defaultValue="175"
+            app:argType="integer" />
+        <argument
+            android:name="weight"
+            android:defaultValue="75"
+            app:argType="integer" />
+        <argument
+            android:name="effort"
+            android:defaultValue="ليس مرهقا"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            android:defaultValue="ذكر"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_navigation_profile_to_saveNewDataDialog"
+            app:destination="@id/saveNewDataDialog" />
+        <argument
+            android:name="bodyStatus"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_navigation_profile_to_longPlanSheetFragment"
+            app:destination="@id/longPlanSheetFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_reservedLongPlanDetailsFragment"
+            app:destination="@id/reservedLongPlanDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_plans"
+        android:name="com.el3asas.regym.ui.plans.PlansFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_plans">
+        <action
+            android:id="@+id/action_navigation_home_to_planFragment"
+            app:destination="@id/planFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_customPlanTimeDialog"
+            app:destination="@id/customPlanTimeDialog" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_calories"
+        android:name="com.el3asas.regym.ui.calories.CaloriesFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_calories">
+        <action
+            android:id="@+id/action_navigation_slideshow_to_caloriesForCat"
+            app:destination="@id/caloriesForCat" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="img"
+            app:argType="android.graphics.Bitmap" />
+    </fragment>
+    <dialog
+        android:id="@+id/heightDialog"
+        android:name="com.el3asas.regym.ui.profile.dialogs.HeightDialog"
+        android:label="HeightDialog" />
+    <dialog
+        android:id="@+id/effortDialog"
+        android:name="com.el3asas.regym.ui.profile.dialogs.EffortDialog"
+        android:label="EffortDialog" />
+    <dialog
+        android:id="@+id/genderDialog"
+        android:name="com.el3asas.regym.ui.profile.dialogs.GenderDialog"
+        android:label="GenderDialog" />
+    <dialog
+        android:id="@+id/ageDialog"
+        android:name="com.el3asas.regym.ui.profile.dialogs.AgeDialog"
+        android:label="AgeDialog" />
+    <dialog
+        android:id="@+id/weightDialog"
+        android:name="com.el3asas.regym.ui.profile.dialogs.WeightDialog"
+        android:label="WeightDialog" />
+    <dialog
+        android:id="@+id/saveNewDataDialog"
+        android:name="com.el3asas.regym.ui.profile.SaveNewDataDialog"
+        android:label="SaveNewDataDialog" />
+    <fragment
+        android:id="@+id/planFragment"
+        android:name="com.el3asas.regym.ui.plans.plan.PlanFragment"
+        android:label="PlanFragment"
+        tools:layout="@layout/fragment_plan">
+        <argument
+            android:name="time"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <argument
+            android:name="fromReceiver"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+    <dialog
+        android:id="@+id/customPlanTimeDialog"
+        android:name="com.el3asas.regym.ui.plans.CustomPlanTimeDialog"
+        android:label="CustomPlanTimeDialog"
+        tools:layout="@layout/dialog_cutom_plan_time">
+        <argument
+            android:name="time"
+            android:defaultValue="6"
+            app:argType="integer" />
+    </dialog>
+    <fragment
+        android:id="@+id/caloriesForCat"
+        android:name="com.el3asas.regym.ui.calories.CaloriesForCat"
+        android:label="calories_for_cat"
+        tools:layout="@layout/calories_for_cat" />
+    <dialog
+        android:id="@+id/longPlanSheetFragment"
+        android:name="com.el3asas.regym.ui.profile.long_plans.LongPlanSheetFragment"
+        android:label="LongPlanSheetFragment"
+        tools:layout="@layout/long_plan_sheet_fragment" />
+    <dialog
+        android:id="@+id/reservedLongPlanDetailsFragment"
+        android:name="com.el3asas.regym.ui.profile.long_plans.ReservedLongPlanDetailsFragment"
+        android:label="ReservedLongPlanDetailsFragment"
+        tools:layout="@layout/reserved_long_plan_details_fragment" />
+</navigation>

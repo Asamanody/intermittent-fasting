@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.el3asas.regym.ui.profile.ProfileFragmentViewModel" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/allBg"
+        android:orientation="vertical"
+        tools:context=".ui.profile.ProfileFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/allBg"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15ssp">
+
+            <ImageButton
+                android:id="@+id/dark"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="end"
+                android:background="@drawable/bb"
+                android:src="@drawable/ic_sun" />
+
+            <TextView
+                android:id="@+id/weekPlans"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:background="@drawable/bb"
+                android:fontFamily="@font/defult"
+                android:gravity="center"
+                android:onClick="@{(v)->viewModel.openLongPlanDialog(v)}"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="@string/weekPlans"
+                android:textColor="@color/txtV"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/dataEntry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <include
+                            android:id="@+id/age"
+                            layout="@layout/item_card"
+                            android:layout_width="@dimen/_85sdp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="?attr/selectableItemBackground"
+                            android:onClick="@{(v)->viewModel.openAgeCard(v)}"
+                            app:img="@{viewModel.ageImg}"
+                            app:title="@{viewModel.ageTitle}"
+                            app:value="@{viewModel.ageVal}" />
+
+                        <include
+                            android:id="@+id/height"
+                            layout="@layout/item_card"
+                            android:layout_width="@dimen/_85sdp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="?attr/selectableItemBackground"
+                            android:onClick="@{(v)->viewModel.openHeightCard(v)}"
+                            app:img="@{viewModel.heightImg}"
+                            app:title="@{viewModel.heightTitle}"
+                            app:value="@{viewModel.heightVal}" />
+
+                        <include
+                            android:id="@+id/weight"
+                            layout="@layout/item_card"
+                            android:layout_width="@dimen/_85sdp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="?attr/selectableItemBackground"
+                            android:onClick="@{(v)->viewModel.openWeightCard(v)}"
+                            app:img="@{viewModel.weightImg}"
+                            app:title="@{viewModel.weightTitle}"
+                            app:value="@{viewModel.weightVal}" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <include
+                            android:id="@+id/effort"
+                            layout="@layout/item_card"
+                            android:layout_width="@dimen/_85sdp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="?attr/selectableItemBackground"
+                            android:onClick="@{(v)->viewModel.openEffortCard(v)}"
+                            app:img="@{viewModel.effortImg}"
+                            app:title="@{viewModel.effortTitle}"
+                            app:value="@{viewModel.effortVal}" />
+
+                        <include
+                            android:id="@+id/genderCard"
+                            layout="@layout/item_card"
+                            android:layout_width="@dimen/_85sdp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="?attr/selectableItemBackground"
+                            android:onClick="@{(v)->viewModel.openGenderCard(v)}"
+                            app:img="@{viewModel.genderImg}"
+                            app:title="@{viewModel.genderTitle}"
+                            app:value="@{viewModel.genderVal}" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/so3rCard"
+                            android:layout_width="@dimen/_85sdp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:backgroundTint="@color/uUI"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:onClick="@{(v)->viewModel.clickCalcCalories(v,info,arrow)}"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardElevation="0dp"
+                            app:elevation="@dimen/_2sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_42sdp"
+                                    android:layout_height="@dimen/_42sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginVertical="@dimen/_4sdp"
+                                    android:background="@drawable/circleb"
+                                    android:padding="6dp"
+                                    android:src="@drawable/so3rr" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="@dimen/_4sdp"
+                                        android:layout_marginVertical="@dimen/_4sdp"
+                                        android:fontFamily="@font/defult"
+                                        android:text="@string/uSo3r"
+                                        android:textColor="#fff"
+                                        android:textSize="@dimen/smllTextView" />
+
+                                    <TextView
+                                        android:id="@+id/youSo3r"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="@dimen/_4sdp"
+                                        android:layout_marginVertical="@dimen/_2sdp"
+                                        android:fontFamily="@font/defult"
+                                        android:gravity="center"
+                                        android:text="@{viewModel.bodyStatusT}"
+                                        android:textColor="#fff"
+                                        android:textSize="@dimen/smllTextView" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/val"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/_4sdp"
+                                    android:fontFamily="@font/defult"
+                                    android:gravity="center"
+                                    android:text="@string/uCallk"
+                                    android:textColor="#fff"
+                                    android:textSize="@dimen/_9ssp" />
+
+                                <LinearLayout
+                                    android:id="@+id/goToInfo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/_3sdp"
+                                    android:background="@color/uBI"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/arrow"
+                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:layout_gravity="center"
+                                        android:rotation="180"
+                                        android:src="@drawable/row_down" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_15ssp"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/defult"
+                                        android:gravity="center"
+                                        android:text="@string/UInfo"
+                                        android:textSize="@dimen/_9ssp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/info_card_bg"
+                    android:visibility="gone"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="0dp"
+                    app:elevation="@dimen/_2sdp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/info_card_bg"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_12sdp">
+
+                        <LinearLayout
+                            android:id="@+id/ccc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_8sdp"
+                            android:layout_marginVertical="@dimen/_8sdp"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/icon"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:fontFamily="@font/defult"
+                                android:gravity="center"
+                                android:text="@string/so3rtitle"
+                                android:textColor="@color/txtV"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/so3rVal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:fontFamily="@font/defult"
+                                android:gravity="center"
+                                android:text="@{viewModel.bodyStatus}"
+                                android:textColor="@color/txtV"
+                                android:textSize="@dimen/_10ssp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:layout_width="68dp"
+                            android:layout_height="68dp"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="@dimen/_8sdp"
+                            android:background="@drawable/circleb"
+                            android:padding="@dimen/_8sdp"
+                            android:src="@drawable/so3rr"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/ccc"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.ads.nativetemplates.TemplateView
+                    android:id="@+id/my_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:visibility="gone"
+                    app:gnt_template_type="@layout/gnt_medium_template_view" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_65sdp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

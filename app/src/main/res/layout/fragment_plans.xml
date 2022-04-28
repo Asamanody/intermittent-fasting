@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.el3asas.regym.ui.plans.PlansViewModel" />
+
+        <variable
+            name="transitionNum"
+            type="int" />
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/allBg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/defult"
+                android:gravity="center"
+                android:text="@string/syamDailyPlans"
+                android:textColor="@color/txtV"
+                android:textSize="@dimen/_20ssp" />
+
+            <include
+                android:id="@+id/plan_1"
+                layout="@layout/plan_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:onClick="@{(v)->viewModel.openPlanFragment(v,1)}"
+                android:text="@string/tue"
+                app:info1="@{@string/_16_8_info1}"
+                app:info2="@{@string/_16_8_info2}"
+                app:title="@{@string/_16_8}" />
+
+            <include
+                android:id="@+id/plan_2"
+                layout="@layout/plan_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:onClick="@{(v)->viewModel.openPlanFragment(v,2)}"
+                app:info1="@{@string/_18_6_info1}"
+                app:info2="@{@string/_18_6_info2}"
+                app:title="@{@string/_18_6}" />
+
+            <include
+                android:id="@+id/plan_3"
+                layout="@layout/plan_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:onClick="@{(v)->viewModel.openPlanFragment(v,3)}"
+                app:info1="@{@string/_20_4_info1}"
+                app:info2="@{@string/_20_4_info2}"
+                app:title="@{@string/_20_4}" />
+
+            <com.google.android.ads.nativetemplates.TemplateView
+                android:id="@+id/my_template"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:visibility="gone"
+                app:gnt_template_type="@layout/gnt_medium_template_view" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/plan_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="@{(v)->viewModel.openPlanFragment(v,4)}"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_plan_bg"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/plan_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:fontFamily="@font/defult"
+                            android:gravity="center"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@{viewModel.plan4Title}"
+                            android:textColor="@color/txtV"
+                            android:textSize="@dimen/text_inputSize"
+                            android:textStyle="bold"
+                            android:transitionName="title4" />
+
+                        <TextView
+                            android:id="@+id/plan_info1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_18sdp"
+                            android:drawablePadding="@dimen/_12sdp"
+                            android:fontFamily="@font/defult"
+                            android:text="@{viewModel.plan4info1}"
+                            android:textColor="@color/txtV"
+                            app:drawableLeftCompat="@drawable/circlee"
+                            app:drawableStartCompat="@drawable/circlee" />
+
+                        <TextView
+                            android:id="@+id/plan_info2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_18sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:drawablePadding="@dimen/_12sdp"
+                            android:fontFamily="@font/defult"
+                            android:text="@{viewModel.plan4info2}"
+                            android:textColor="@color/txtV"
+                            app:drawableLeftCompat="@drawable/circlee"
+                            app:drawableStartCompat="@drawable/circlee" />
+
+                        <TextView
+                            android:id="@+id/go"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:layout_marginVertical="18dp"
+                            android:fontFamily="@font/defult"
+                            android:gravity="center"
+                            android:text="@string/go_to_info"
+                            android:textColor="@color/txtV" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/imgBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/editBg"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:onClick="@{(v)->viewModel.openCustomizePlanDialog(v,planTitle)}"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_12sdp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_edit"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

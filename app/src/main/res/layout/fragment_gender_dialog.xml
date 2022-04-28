@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardBg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/DialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/defult"
+            android:gravity="center"
+            android:text="@string/genderr"
+            android:textColor="@color/txtV"
+            android:textSize="@dimen/dialogTitleS" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radio_flat_selector_left"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:fontFamily="@font/defult"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/male"
+                android:textColor="@color/radio_flat_text_selector"
+                android:textSize="@dimen/text_view_tS"
+                app:buttonTint="@color/colorPrimary" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radio_flat_selector_right"
+                android:button="@android:color/transparent"
+                android:fontFamily="@font/defult"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/female"
+                android:textColor="@color/radio_flat_text_selector"
+                android:textSize="@dimen/text_view_tS"
+                app:buttonTint="@color/colorPrimary" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/go"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:backgroundTint="@color/buttonBlueBg"
+            android:paddingHorizontal="@dimen/_60sdp"
+            android:text="@string/save" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.el3asas.regym.ui.plans.plan.PlanViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/allBg"
+            tools:context=".ui.plans.plan.PlanFragment">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/back"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentTop="false"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/_3sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_20sdp"
+                android:fontFamily="@font/defult"
+                android:gravity="center_horizontal"
+                android:text="@{viewModel.planTitle}"
+                android:textColor="@color/txtV"
+                android:textSize="@dimen/_20ssp"
+                android:transitionName="planeTitle"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@+id/back" />
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/progressbar"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="24dp"
+                app:cpb_background_progressbar_color="@color/secondaryProgressBG"
+                app:cpb_background_progressbar_width="@dimen/_10sdp"
+                app:cpb_progress="1"
+                app:cpb_progressbar_color="@color/colorAccent"
+                app:cpb_progressbar_width="@dimen/_10sdp"
+                app:cpb_round_border="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/time" />
+
+
+            <TextView
+                android:id="@+id/clck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:fontFamily="@font/defult"
+                android:gravity="center_horizontal"
+                android:layoutDirection="ltr"
+                android:textColor="@color/txtV"
+                android:textSize="@dimen/text_inputSize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/progressbar"
+                app:layout_constraintEnd_toEndOf="@+id/progressbar"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/progressbar"
+                app:layout_constraintTop_toTopOf="@+id/progressbar"
+                app:layout_constraintVertical_bias="0.308" />
+
+            <Button
+                android:id="@+id/start"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/button_background"
+                android:onClick="@{()->viewModel.startPlanClickListener(groupSyam,start)}"
+                android:text="@string/start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/progressbar" />
+
+            <com.google.android.ads.nativetemplates.TemplateView
+                android:id="@+id/my_template"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/cardBg"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:gnt_template_type="@layout/gnt_medium_template_view"
+                app:layout_constraintTop_toBottomOf="@+id/c"
+                tools:layout_editor_absoluteX="52dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginVertical="25dp"
+                android:padding="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/start"
+                tools:layout_editor_absoluteY="556dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_grad_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp"
+                    tools:layout_editor_absoluteX="6dp"
+                    tools:layout_editor_absoluteY="7dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/defult"
+                        android:text="@string/sugg1"
+                        android:textColor="@color/whightText"
+                        android:textSize="@dimen/planInstrac"
+                        android:drawablePadding="@dimen/_12sdp"
+                        app:drawableLeftCompat="@drawable/smll_wihte_circle"
+                        app:drawableStartCompat="@drawable/smll_wihte_circle"/>
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/defult"
+                        android:text="@string/sugg2"
+                        android:textColor="@color/whightText"
+                        android:textSize="@dimen/planInstrac"
+                        android:drawablePadding="@dimen/_12sdp"
+                        app:drawableLeftCompat="@drawable/smll_wihte_circle"
+                        app:drawableStartCompat="@drawable/smll_wihte_circle"/>
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/defult"
+                        android:text="@string/sugg3"
+                        android:textColor="@color/whightText"
+                        android:textSize="@dimen/planInstrac"
+                        android:drawablePadding="@dimen/_12sdp"
+                        app:drawableLeftCompat="@drawable/smll_wihte_circle"
+                        app:drawableStartCompat="@drawable/smll_wihte_circle"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/defult"
+                        android:text="@string/sugg4"
+                        android:textColor="@color/whightText"
+                        android:textSize="@dimen/planInstrac"
+                        android:drawablePadding="@dimen/_12sdp"
+                        app:drawableLeftCompat="@drawable/smll_wihte_circle"
+                        app:drawableStartCompat="@drawable/smll_wihte_circle"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginVertical="25dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/stop_btn"
+                android:fontFamily="@font/defult"
+                android:onClick="@{()->viewModel.stopPlanClickListener(groupSyam,start)}"
+                android:text="@string/stop"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_template" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/defult"
+                android:text="@{@string/from + viewModel.from }"
+                android:textColor="@color/txtV"
+                app:drawableStartCompat="@drawable/circlee"
+                app:layout_constraintEnd_toEndOf="@+id/clck"
+                app:layout_constraintStart_toStartOf="@+id/clck"
+                app:layout_constraintTop_toBottomOf="@+id/clck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/defult"
+                android:text="@{@string/to + viewModel.to}"
+                android:textColor="@color/txtV"
+                app:drawableStartCompat="@drawable/circlee"
+                app:layout_constraintStart_toStartOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/groupSyam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="textView5,textView6,clck,progressbar,stop"
+                tools:layout_editor_absoluteX="305dp"
+                tools:layout_editor_absoluteY="289dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

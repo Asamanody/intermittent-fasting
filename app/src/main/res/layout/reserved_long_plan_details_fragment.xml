@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.el3asas.regym.ui.profile.long_plans.ReservedLongPlanDetailsViewModel" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardBg"
+        android:orientation="vertical"
+        tools:context=".ui.profile.long_plans.ReservedLongPlanDetailsFragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/defult"
+            android:gravity="center"
+            android:textColor="@color/txtV"
+            android:padding="@dimen/_18sdp"
+            android:text="@{viewModel.weekly_monthly}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="start"
+            android:paddingHorizontal="@dimen/_18sdp"
+            android:paddingTop="@dimen/_18sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="@string/selectedDays"
+            android:textColor="@color/txtV"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_baseline_calendar_today_24" />
+
+        <include
+            android:id="@+id/specifiedDays"
+            layout="@layout/fragment_specifed_days_sheet"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:drawablePadding="@dimen/_8sdp"
+            android:paddingHorizontal="@dimen/_18sdp"
+            android:paddingTop="@dimen/_18sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="@string/syamHours"
+            android:textColor="@color/txtV"
+            app:drawableStartCompat="@drawable/dark_clock" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingHorizontal="@dimen/_18sdp"
+            android:text='@{@string/syamHoursBody1+" "+viewModel.hours+" "+@string/syamHoursBody2}'
+            android:textColor="@color/txtV"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/showLongPlan"
+                style="@style/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:elevation="@dimen/_2sdp"
+                android:text='@string/yourProgress'
+                android:textColor="@color/whightText" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancelLongPlan"
+                style="@style/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/buttonRedBg"
+                android:elevation="@dimen/_2sdp"
+                android:text="@string/deleteLngP"
+                android:textColor="@color/whightText" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

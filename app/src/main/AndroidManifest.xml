@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.el3asas.regym">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+
+    <application
+        android:name=".MyNewApp"
+        android:icon="@drawable/ic_icon88"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_icon88"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ui.AlarmActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_alarm"
+            android:theme="@style/AppTheme.Fullscreen" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_ads" />
+
+        <activity
+            android:name=".ui.StartActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.FullScreen" />
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:icon="@drawable/ic_icon88"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/ic_icon88"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".receivers.AlarmReceiver" />
+        <receiver android:name=".receivers.PlanReceiver" />
+        <receiver android:name=".receivers.WaterTimeReceiver" />
+        <receiver android:name=".receivers.HideAlarmReceiver" />
+        <receiver android:name=".receivers.DeviceOpenReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".receivers.AlarmPlayer"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

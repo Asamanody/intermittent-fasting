@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wakelock"
+        android:keepScreenOn="true"
+        android:theme="@style/ThemeOverlay.Regym.FullscreenContainer"
+        tools:context=".ui.AlarmActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:alpha="3"
+            app:layout_constraintBottom_toTopOf="@+id/appCompatTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_food" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_50sdp"
+            android:alpha="6"
+            android:gravity="center"
+            android:text="@string/syam_finished"
+            android:textColor="@color/whightText"
+            app:layout_constraintBottom_toTopOf="@id/cancelAlarm"
+            tools:layout_editor_absoluteX="26dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancelAlarm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginBottom="124dp"
+            android:backgroundTint="#F13A3A"
+            android:text="@string/stopAlarm"
+            android:textColor="@color/whightText"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

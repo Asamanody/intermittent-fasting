@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="img"
+            type="int" />
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="value"
+            type="String" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="0dp"
+        app:elevation="@dimen/_2sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/info_card_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/_4sdp"
+                android:background="@drawable/circleb"
+                android:padding="6dp"
+                app:imageResource="@{img}" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginVertical="@dimen/_4sdp"
+                android:fontFamily="@font/defult"
+                android:gravity="center"
+                android:text="@{title}"
+                android:textColor="@color/txtV"
+                android:textSize="@dimen/smllTextView" />
+
+            <TextView
+                android:id="@+id/val"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:fontFamily="@font/defult"
+                android:gravity="center"
+                android:text="@{value}"
+                android:textColor="@color/txtV"
+                android:textSize="@dimen/smllTextView" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

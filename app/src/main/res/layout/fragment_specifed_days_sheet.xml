@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/sat"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/calender_item_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/satU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:gravity="center"
+                    android:text="@string/satE"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/dayesEn" />
+
+                <TextView
+                    android:id="@+id/satB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:text="@string/sat"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/radioText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sun"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/calender_item_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/sunU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:gravity="center"
+                    android:text="@string/sune"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/dayesEn" />
+
+                <TextView
+                    android:id="@+id/sunB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:text="@string/sun"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/radioText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mon"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/calender_item_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/monU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:gravity="center"
+                    android:text="@string/mone"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/dayesEn" />
+
+                <TextView
+                    android:id="@+id/monB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:text="@string/mon"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/radioText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tue"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/calender_item_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tueU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:gravity="center"
+                    android:text="@string/tuee"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/dayesEn" />
+
+                <TextView
+                    android:id="@+id/tueB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:text="@string/tue"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/radioText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wed"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/calender_item_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/wedU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:gravity="center"
+                    android:text="@string/wede"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/dayesEn" />
+
+                <TextView
+                    android:id="@+id/wedB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:text="@string/wed"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/radioText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thu"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/calender_item_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/thuU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:gravity="center"
+                    android:text="@string/thue"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/dayesEn" />
+
+                <TextView
+                    android:id="@+id/thuB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:text="@string/thu"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/radioText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fri"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/calender_item_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/friU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:gravity="center"
+                    android:text="@string/frie"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/dayesEn" />
+
+                <TextView
+                    android:id="@+id/friB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/defult"
+                    android:text="@string/fri"
+                    android:textColor="@color/textOnImg"
+                    android:textSize="@dimen/radioText" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</layout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/cardBg"
+        tools:context=".ui.profile.long_plans.LongPlanSheetFragment">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/defult"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/selectPlan"
+            android:textColor="@color/txtV"
+            android:textSize="@dimen/dialogTitleTxt"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:layout_constraintTop_toBottomOf="@id/title">
+
+            <include
+                android:id="@+id/startPlanTime"
+                layout="@layout/fragment_start_plan_time_sheet"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/specifiedDays"
+                layout="@layout/fragment_specifed_days_sheet"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/planLength"
+                layout="@layout/fragment_plan_lenght" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/planTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textSize="@dimen/text_view_tS"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:np_dividerColor="@color/dividerColor"
+                app:np_dividerLength="@dimen/pickerDividerH"
+                app:np_max="20"
+                app:np_min="1"
+                app:np_orientation="horizontal"
+                app:np_selectedTextColor="@color/dividerColor"
+                app:np_selectedTextSize="@dimen/pickerST"
+                app:np_textColor="@color/dividerColor"
+                app:np_textSize="@dimen/pickerUST" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/finishImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check_circle_outline_24"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/finishBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/defult"
+                android:gravity="center"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/startLongPlan"
+                android:textColor="@color/txtV"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_check"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/finishImg" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/defult"
+            android:gravity="center"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/next_text"
+            android:textColor="@color/txtV"
+            app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/defult"
+            android:gravity="center"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/back_text"
+            android:textColor="@color/txtV"
+            android:visibility="gone"
+            app:drawableStartCompat="@drawable/ic_baseline_keyboard_arrow_left_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
